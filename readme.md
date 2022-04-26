@@ -10,10 +10,16 @@ OpenCV comes with a trainer as well as detector.
 
 For more information, [see](https://docs.opencv.org/master/d7/d8b/tutorial_py_face_detection.html)
 
-### ## Execution 
+###  Execution 
 
 To run the code, type `python Face.py`
 
 ```
 python Face.py
+```
+###  Requirements 
+
+```
+Python >= 2.7
+opencv-python 
 ```

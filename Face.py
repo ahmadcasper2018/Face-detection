@@ -1,4 +1,3 @@
-import numpy as np
 import cv2
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -20,7 +19,7 @@ while True:
 		eyes=eye_cascade.detectMultiScale(roi_gray)
 		# smiles=smile_cascade.detectMultiScale(roi_gray)
 		for(ex,ey,ew,eh) in eyes:
-			cv2.rectangle(roi_color,(ex, ey),(ex+ew, ey+eh),(0,255,0),2)
+			cv2.rectangle(roi_color,(ex, ey),(ex+ew, ey+eh),(0,255,0),1)
 			print(ex,ey)
 		# for(sx,sy,sw,sh) in smiles:
 			# cv2.rectangle(roi_color,(sx, sy),(sx+sw, sy+sh),(0,0,255),2)
